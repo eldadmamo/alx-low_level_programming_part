@@ -1,28 +1,20 @@
-#include "main.h"
+#include <main.h>
+#include <stdio.h>
 
 /**
- *   * _strstr - main function
- *     *
- *       * @needle: function parameter
- *         *
- *           * @haystack: function parameter
- *             *
- *               * Return: Always 0.
-*/
-char *_strstr(char *haystack, char *needle)
-{
-		for (; *haystack != '\0'; haystack++)
-		{
-		char *I = haystack;
-		char *P = needle;
+ * main - main check the code
+ *
+ * Return : Always 0
+ *
+ */
 
-		while (*I == *P && *P != '\0')
-	{
-		i++;
-		P++;
-		}
-		if (*P == '\0')
-		return (haystack);
-		}
-		return (0);
-}
+int main(void)
+{
+	char *s = "hello, world";
+	char *f = "world";
+	char *t;
+
+	t = _strstr(s, f);
+	printf("%s\n", t);
+	return (0);
+};
