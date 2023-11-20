@@ -8,10 +8,8 @@
  * struct listint_s - singly linked list
  * @n: int
  * @next: points next node
- *
- * Description: singly linked list node stru
- * 
  */
+
 typedef struct listint_s
 {
 int n;
